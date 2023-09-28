@@ -13,6 +13,7 @@ public class RESTPokemonGETTest {
         System.assertEquals(1, pokeMoon.size());  
         System.assertNotEquals(null, oohHereWeGo.size());
     }
+     
     
     @isTest
     public static void returnGETMethod(){
