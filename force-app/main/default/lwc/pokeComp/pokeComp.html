@@ -1,0 +1,25 @@
+<template>
+
+<lightning-card title="Gotta Catch Em All!">
+    <lightning-input type="Search" onchange={pokeChange} value={currentKey}></lightning-input>
+    <lightning-button type = 'button' class="buttonColor" onclick={handleChange}>Submit pokeName</lightning-button>
+    <div>
+        <template if:true={pokemons}>
+            <lightning-card>
+                <template for:each={pokemons.abilities} for:item="pokemo">
+                    <li key ={pokemon.id}>
+                        {pokemon.ability.name}
+                    </li>
+                </template>
+            </lightning-card
+            ></template>
+    </div>
+    <div>
+        <template if:false={pokemons}>
+                This had an error {error}
+        </template>
+    </div>
+</lightning-card>
+
+
+</template>
