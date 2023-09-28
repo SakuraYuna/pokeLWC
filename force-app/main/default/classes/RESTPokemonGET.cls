@@ -15,7 +15,7 @@ global with sharing class RESTPokemonGET {
 	//possible values: Spit, Water Squirt, Fire, Lick, Snooze
         }
         insert newPokemon;
-    }
+    } 
 
     @HttpGet
     global static Poke__c pokeGet(){
