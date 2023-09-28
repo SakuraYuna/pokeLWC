@@ -9,6 +9,7 @@ global with sharing class RESTPokemonGET {
     global static void pokeCreate(String name, List<String> ability){
        
         Poke__c newPokemon = new Poke__C();
+        newPokemon.Name = name;
         for(String abi:ability){
         newPokemon.abilities__c = abi;
 	//possible values: Spit, Water Squirt, Fire, Lick, Snooze
